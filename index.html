@@ -168,9 +168,41 @@ input, textarea {
     padding-bottom: 10px;
     color: grey;
 }
+            ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
         </style>    
     </head>    
     <body>
+        <ul>
+        <li><a class="active" href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        </ul>
         <!-- header start -->
         <div id="header" class="section">
             <img alt="" class="img-circle" src="https://code.sololearn.com/Icons/Avatars/0.jpg">
@@ -179,7 +211,7 @@ input, textarea {
         <!-- header end -->
         
         <!-- About Me section start -->
-        <div class="section">
+        <div class="section about">
             <h1><span>About Me</span></h1>
             <p>
                 Hey! I'm <strong>Sahil</strong>. Coding has changed my world. It's not just about apps. Learning to code gave me <i>problem-solving skills</i> and a way to communicate with others on a technical level. I can also develop websites and use my coding skills to get a better job. And I learned it all at <strong>Online</strong>.Join me in this rewarding journey. You'll have fun, get help, and learn along the way!
@@ -246,7 +278,7 @@ input, textarea {
         
         
         <!-- My Skills section start -->
-        <div class="section">
+        <div class="section skills">
             <h1><span>My Skills</span></h1>
             <ul>
                 <li>HTML <br />
