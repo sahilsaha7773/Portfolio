@@ -214,6 +214,25 @@ input, textarea {
             <img alt="" class="img-circle" src="Sahil.jpg">
             <p>Sahil Saha</p>
         </div>
+        <div id="app"><strong>"I am a "</strong></div>
+        <script src='core.js'></script>
+        <script type="text/javascript">
+            var app = document.getElementById('app');
+
+            var typewriter = new Typewriter(app, {
+            loop: true
+            });
+
+            typewriter.typeString('web developer')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('android developer')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('<strong>a 15 year old</strong>')
+            .pauseFor(2500)
+            .start();
+        </script>
         <!-- header end -->
         
         <!-- About Me 
